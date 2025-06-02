@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import styles from "./styles/styles";
-import Home from "./pages/Home";
+
 import PageNotFound from "./pages/PageNotFound";
 import IndexPage from "./pages";
 import HomePage from "./pages/HomePage";
