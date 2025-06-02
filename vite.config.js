@@ -1,11 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import eslint from "vite-plugin-eslint";
-// https://vitejs.dev/config/
+
+const plugins = [react()];
+
+if (process.env.NODE_ENV !== "production") {
+  try {
+    const eslint = require("vite-plugin-eslint").default;
+    plugins.push(eslint());
+  } catch (e) {
+    console.warn("vite-plugin-eslint not installed, skipping...");
+  }
+}
+
 export default defineConfig({
-  plugins: [
-    react(),
-    // only use eslint plugin in development
-    process.env.NODE_ENV !== "production" && eslint(),
-  ].filter(Boolean),
+  plugins,
 });
