@@ -1,8 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const plugins = [react()];
-
 if (process.env.NODE_ENV !== "production") {
   try {
     const eslint = require("vite-plugin-eslint").default;
@@ -13,5 +11,8 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 export default defineConfig({
-  plugins,
+  plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 1500, // increase to 1.5MB
+  },
 });
