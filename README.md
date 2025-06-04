@@ -18,8 +18,8 @@ The application is composed of the following Features:
 * The cart component also allows to edit the contents of the items selected.
 * Admin part compose of viewing all orders,products and a dashboard having total sales displayed. 
 ### IDE setup
-1.clone the project
+1.clone the project using git.
 2.npm install
 3.npm run dev
-for better functionality integrate with backend code ().
+for better functionality integrate with backend code (https://github.com/shamna369/Eshop-backend.git).
 
