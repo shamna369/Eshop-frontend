@@ -1,8 +1,25 @@
 # React + Vite
+# Ecommerce-website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* The data is stored on mongodb.
+version 1 is hosted [HERE!](https://eshop-store-q1kv.onrender.com)
 
-Currently, two official plugins are available:
+An E commerce platform made using React JS, Redux, Stripe API (temporarily creating dummy payment gateway) and backend using node js .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application is composed of the following Features:
+
+### Front-End
+* A landing page with animated minimalistic design, with the major categories of items.
+* A quick peek page where 100  products of different categories are on display.
+* A page with Sign-in and Sign-out components.
+* All form related fields are made using reusable components.
+* Has a cart feature which opens up and displays the items selected in a summary, also has a checkout button.
+* Has user profile updation part.
+* The cart component also allows to edit the contents of the items selected.
+* Admin part compose of viewing all orders,products and a dashboard having total sales displayed. 
+### IDE setup
+1.clone the project
+2.npm install
+3.npm run dev
+for better functionality integrate with backend code ().
+
